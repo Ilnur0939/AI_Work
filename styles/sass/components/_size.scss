@@ -1,0 +1,79 @@
+.size-text{
+    @include font(normal, 600 , 24px , 33px, #626262);
+    margin-left: 73px;
+    margin-bottom: 0;
+}
+.win-inp-label{
+    @include font(normal, 600 , 10px , 14px, #00A0FA);
+    margin-left: 70px;
+}
+.size{
+    position: relative;
+}
+
+.win-form-box{
+    width: 130px;
+    &:nth-child(4){
+        margin-left: 214px;
+        
+    }
+}
+
+
+.win-inp-left {
+	width: 100px;
+	height: 25px;
+	background: #F4F4F4;
+	border: 1px solid #0077FF;
+	border-radius: 5px;
+	outline: none;
+    margin-left: 15px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.win-inp-right {
+	width: 100px;
+	height: 25px;
+	background: #F4F4F4;
+	border: 1px solid #0077FF;
+	border-radius: 5px;
+	outline: none;
+    margin-left: 10px;
+}
+
+
+.win-btn{
+    position: relative;
+    @include font(normal , 600 , 16px , 22px , #fff);
+    width: 149.58px;
+    height: 37.41px;
+    background: #1EE23D;
+    border-radius: 7px;
+    border: none;
+    margin-left: 232px;
+    margin-top: 67px;   
+    
+}
+
+.btn-success{
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        top: -10px;
+        right: -5px;
+        background: url("/images/success-icon.svg") no-repeat top;
+    }
+
+}
+
+.size-next{
+    left: 75%;
+    right: 50px;
+    margin-top: 151px;
+}

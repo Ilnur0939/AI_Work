@@ -1,4 +1,37 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: 'Montserrat-Bold';
+    src: url("/fonts/Montserrat-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/fonts/OpenSans-SemiBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/fonts/OpenSans-Italic.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/fonts/OpenSans-Italic.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
 }

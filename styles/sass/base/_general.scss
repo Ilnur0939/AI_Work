@@ -4,11 +4,10 @@
 
 body{
     margin: 0;
-    font-family: $main-font;
-    background-color: $main-background-color;
+    font-family: 'OpenSans', sans-serif;
 }
 
-a{
+a , u{
     text-decoration: none;
 }
 
@@ -31,3 +30,9 @@ img{
     white-space: nowrap;
     width: 1px;
   }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}

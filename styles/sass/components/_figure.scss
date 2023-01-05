@@ -1,0 +1,280 @@
+.figure__window{
+    margin-left: 78px;
+}
+
+.figure__text{
+    @include font(normal , 600 , 20px , 27px , #000000);
+    margin: 0;
+    margin-left: 96px;
+    margin-top: 15px;
+}
+
+.figure__winbox{
+    width: 356px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    position: relative;
+    margin-top: 14px;
+    margin-left: 27px;
+
+}
+.figure__collection{
+    // display: flex;
+    position: relative;
+    // overflow: hidden;
+
+    .left-arrow{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 5;
+        width: 27px;
+        height: 40px;
+        top: 60%;
+        transform: translateY(-50%);
+        border: none;
+        background: #fff;
+    }
+    .right-arrow{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 5;
+        width: 27px;
+        height: 40px;
+        top: 60%;
+        right: 0;
+        transform: translateY(-50%);
+        border: none;
+        background: rgb(255, 255, 255);
+    }
+
+    .left-arrow>span{
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        border: solid 3px #D9D9D9;
+        border-width: 0 5px 5px 0;
+        padding: 8px;
+        transform: rotate(135deg);
+        left: 7px;
+    }
+    .right-arrow>span{
+        display: inline-block;
+        position: absolute;
+        border: solid 3px #D9D9D9;
+        border-width: 0 5px 5px 0;
+        padding: 8px;
+        // transform: translate(-50%);
+        transform: rotate(-45deg);
+        right: 7px;
+        // top: 50%;
+    }
+}
+
+.figure__wincollectionimgtop{
+    width: 105px;
+    height: 112px;
+    position: relative;
+    margin-right: 20px; 
+}
+.figure__wincollectionimg{
+    width: 105px;
+    height: 112px;
+    position: relative;
+    margin-right: 20px; 
+}
+.figure__wincollection{
+    width: 109px;
+    margin-right: 17px;
+    position: relative;
+    border: 2px solid #fff;
+}
+.figure__wincollection--selection{
+    border: 2px solid #1EE23D;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 3;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        bottom: -5px;
+        left: 95px;
+        background: url("/images/success-icon.svg") no-repeat;
+    }
+}
+
+.figure__list{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    transform: translateX(0px);
+    transition: all 0.4s ease-in-out;
+}
+
+.figure__carousel{
+    position: relative;
+    z-index: 3;
+    // display: flex;
+    // transform: translateX(0px);
+    transition: all 0.4s ease-in-out;
+}
+
+.figure__firstbox{
+    position: relative;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+
+.figure__bottom{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    
+
+    .bottom-list__right{
+        margin-left: 29px;
+        .bottom-list__text{
+            @include font(normal , 600 , 20px , 27px , #00A0FA);
+        }
+    }
+}
+
+
+.bottom-list__form{
+    display: flex;
+    position: relative;;
+    .bottom-list__minus{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #00A0FA;
+        font-size: 30px;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 16px;
+            height: 3px;
+            border-radius: 8px;
+            background: #fff;
+
+        }
+    }
+
+    .bottom-list__inp{
+        position: relative;;
+        width: 64px;
+        height: 31px;
+        background: #F4F4F4;
+        border: 1px solid #00A0FA;
+        border-radius: 5px;
+        outline: none;
+        margin: 0 14px;
+        padding-left: 25px;
+        @include font(normal , 600 , 20px , 27px , #454546);
+
+        &::placeholder{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include font(normal , 600 , 20px , 27px , #454546);
+        }
+    }
+
+    .bottom-list__plus{
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #00A0FA;
+        font-size: 30px;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 16px;
+            height: 3px;
+            border-radius: 8px;
+            background: #fff;
+        }
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 3px;
+            border-radius: 8px;
+            background: #fff;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.next-button{
+    position: relative;
+    right: -130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    margin-top: 44px;
+    background: #00A0FA;
+    border-radius: 50%;
+    
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 41%;
+        right: 20px;
+        width: 16px;
+        height: 3px;
+        transform: rotate(45deg);
+        background: #FFFFFF;
+        border-radius: 1.5px;
+    }
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 41%;
+        right: 20px;
+        width: 16px;
+        height: 3px;
+        transform: rotate(135deg);
+        background: #FFFFFF;
+        border-radius: 1.5px;
+    }
+
+    &>span{
+           position: absolute;
+            width: 24px;
+            height: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+            border-radius: 2px;
+            background: rgb(255, 255, 255);
+        
+    }
+
+}
+
+.figure__list--none{
+    display: none;
+}

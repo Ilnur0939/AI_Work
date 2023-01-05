@@ -1,0 +1,46 @@
+.color-win{
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
+}
+.win-text{
+    text-align: end;
+    margin-right: 25px;
+    @include font(normal , 600 , 20px , 27px , #000);
+}
+
+.color-box {
+	text-align: center;
+}
+.color-window{
+	width: 70px;
+	height: 70px;
+	border-radius: 6px;
+	padding: 0;
+	background: #fff;
+	border: none;
+	border: 1px solid #BFBFBF;
+}
+.win-bottom {
+	display: flex;
+	justify-content: space-evenly;
+}
+.color-title {
+	font-size: 12px;
+	color: #8D8D8D;
+}
+.white {
+	background: #fff;
+}
+.dub {
+	background: url('./images/win-dub.svg') no-repeat  100%;
+	background-size: 500px;
+}
+.mokko {
+	background: url('./images/win-mokko.svg') no-repeat  100%;
+	background-size: 500px;
+}
+.mokry {
+	background: url('./images/win-mokry.svg') no-repeat  100%;
+	background-size: 500px;
+}

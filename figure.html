@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="figure">
+            <img src="./images/AI-work-logo.svg" alt="" class="logo">
+            
+            <img class="figure__window" src="./images/window-3/window3-1.svg" alt="window">
+            <p class="figure__text">Romni shaklini tanlang</p>
+            <div class="figure__winbox">
+
+                <div id="first" class="figure__wincollection figure__wincollection--selection">
+                    <img src="./images/window-3/window3-1.svg" alt="window" class="figure__wincollectionimgtop">
+                </div>
+                <div id="second" class="figure__wincollection">
+                    <img src="./images/window-5/window5-2.svg" alt="window" class="figure__wincollectionimgtop ">
+                </div>
+                <div id="third" class="figure__wincollection">
+                    <img src="./images/window2.svg" alt="window" class="figure__wincollectionimgtop">
+                </div>
+            </div>
+            <div class="figure__collection">
+                <button class="left-arrow" id="left">
+                    <span></span>
+                </button>
+                <div class="figure__carousel">
+                   <div class="figure__list">
+                        <div id="three" class="figure__firstbox">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-1.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-2.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-3.svg" alt="">
+                        </div>
+                        <div class="figure__firstbox">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-4.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-5.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-6.svg" alt="">
+                        </div>
+                        <div class="figure__firstbox">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-7.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-3/window3-8.svg" alt="">
+                        </div>
+                   </div>
+
+
+                    <div id="two" class="figure__list figure__list--none">
+                        <div class="figure__firstbox">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-1.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-2.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-3.svg" alt="">
+                        </div>
+                        <div class="figure__firstbox">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-4.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-5.svg" alt="">
+                            <img class="figure__wincollectionimg" src="./images/window-5/window5-6.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="right-arrow" id="right">
+                    <span></span>
+                </button>
+            </div>
+            <div class="figure__bottom bottom-list">
+                <div class="bottom-list__right">
+                    <p class="bottom-list__text">Sonini kiriting</p>
+                    <div class="bottom-list__form">
+                        <span class="bottom-list__minus" onclick="countMinus()"></span>
+                        <input class="bottom-list__inp" type="number" placeholder="1" >
+                        <span class="bottom-list__plus" onclick="countPlus()"></span>
+                    </div>
+                </div>
+                <a href="./size.html" class="next-button"><span></span></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./javaScript/carousel.js"></script>
+    <script src="./javaScript/figure.js"></script>
+</body>
+</html>
